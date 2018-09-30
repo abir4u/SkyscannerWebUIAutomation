@@ -30,7 +30,7 @@ public class Skyscanner {
 
        switch (browser){
            case "chrome":
-               System.setProperty("webdriver.chrome.driver", "/Users/abirpal/Desktop/Clones/web-automation-myVF/drivers_and_Jars/Chrome_driver/chromedriver");
+               System.setProperty("webdriver.chrome.driver", getConfigValue("driverPath"));
                driver = new ChromeDriver();
                break;
 
