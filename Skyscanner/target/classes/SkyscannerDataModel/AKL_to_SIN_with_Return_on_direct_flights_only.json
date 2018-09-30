@@ -1,0 +1,6 @@
+{
+  "departureLocation":"AKL",
+  "returnLocation":"SIN",
+  "journeyType":true,
+  "toggleDirectFlights":true
+}

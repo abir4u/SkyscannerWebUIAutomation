@@ -1,0 +1,21 @@
+Feature: Search
+  As a Product Owner
+  I want to ensure that user is able to search direct return flights between two international cities
+
+  Scenario: Search for all direct flights including nearby airports options                                     [90m# Search.feature:5[0m
+    [32mGiven [0m[32mI am on Skyscanner website[0m                                                                            [90m# MyStepdefs.iAmASkyscannerUser()[0m
+    [32mWhen [0m[32mI choose to search for a trip from [0m[32m[1mAKL to SIN with Return on direct flights only[0m                       [90m# MyStepdefs.iChooseTheAirports(String)[0m
+    [32mAnd [0m[32mI specify the dates for departure and arrival of flight[0m                                                 [90m# MyStepdefs.iAddFlightDates()[0m
+    [32mAnd [0m[32mI add nearby airports for both sides[0m                                                                    [90m# MyStepdefs.iAddNearbyAirportsForBothSidess()[0m
+    [32mAnd [0m[32mI search for flights[0m                                                                                    [90m# MyStepdefs.iSearchForFlights()[0m
+    [32mAnd [0m[32mI should be on the Flights Results page for the trip from [0m[32m[1mAKL to SIN with Return on direct flights only[0m [90m# MyStepdefs.iShouldBeOnResultsPage(String)[0m
+    [32mThen [0m[32mI should see all available flights for my search[0m                                                       [90m# MyStepdefs.iShouldSeeAllAvailableFlights()[0m
+
+  Scenario: Validate if appropriate error message is displayed if there are no direct flights between two locations [90m# Search.feature:14[0m
+    [32mGiven [0m[32mI am on Skyscanner website[0m                                                                                [90m# MyStepdefs.iAmASkyscannerUser()[0m
+    [32mWhen [0m[32mI choose to search for a trip from [0m[32m[1mCHC to PAT with Return on direct flights only[0m                           [90m# MyStepdefs.iChooseTheAirports(String)[0m
+    [32mAnd [0m[32mI specify the dates for departure and arrival of flight[0m                                                     [90m# MyStepdefs.iAddFlightDates()[0m
+    [32mAnd [0m[32mI add nearby airports for both sides[0m                                                                        [90m# MyStepdefs.iAddNearbyAirportsForBothSidess()[0m
+    [32mAnd [0m[32mI search for flights[0m                                                                                        [90m# MyStepdefs.iSearchForFlights()[0m
+    [32mAnd [0m[32mI should be on the Flights Results page for the trip from [0m[32m[1mCHC to PAT with Return on direct flights only[0m     [90m# MyStepdefs.iShouldBeOnResultsPage(String)[0m
+    [32mThen [0m[32mI should be displayed with appropriate error message[0m                                                       [90m# MyStepdefs.iShouldSeeAptErrorMessage()[0m

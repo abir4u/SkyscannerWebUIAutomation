@@ -1,0 +1,268 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 20399994589,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.begin()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Search for all direct flights including nearby airports options",
+        "description": "",
+        "id": "search;search-for-all-direct-flights-including-nearby-airports-options",
+        "after": [
+          {
+            "result": {
+              "duration": 837456825,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 83474204,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on Skyscanner website",
+            "match": {
+              "location": "MyStepdefs.iAmASkyscannerUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2233367442,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I choose to search for a trip from AKL to SIN with Return on direct flights only",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AKL to SIN with Return on direct flights only",
+                  "offset": 35
+                }
+              ],
+              "location": "MyStepdefs.iChooseTheAirports(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2033477569,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I specify the dates for departure and arrival of flight",
+            "match": {
+              "location": "MyStepdefs.iAddFlightDates()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 518502742,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I add nearby airports for both sides",
+            "match": {
+              "location": "MyStepdefs.iAddNearbyAirportsForBothSidess()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3020748472,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I search for flights",
+            "match": {
+              "location": "MyStepdefs.iSearchForFlights()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57968331817,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should be on the Flights Results page for the trip from AKL to SIN with Return on direct flights only",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AKL to SIN with Return on direct flights only",
+                  "offset": 58
+                }
+              ],
+              "location": "MyStepdefs.iShouldBeOnResultsPage(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 172533856,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should see all available flights for my search",
+            "match": {
+              "location": "MyStepdefs.iShouldSeeAllAvailableFlights()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7144306989,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.begin()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Validate if appropriate error message is displayed if there are no direct flights between two locations",
+        "description": "",
+        "id": "search;validate-if-appropriate-error-message-is-displayed-if-there-are-no-direct-flights-between-two-locations",
+        "after": [
+          {
+            "result": {
+              "duration": 705532098,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8301872,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I am on Skyscanner website",
+            "match": {
+              "location": "MyStepdefs.iAmASkyscannerUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1940301997,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I choose to search for a trip from CHC to PAT with Return on direct flights only",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CHC to PAT with Return on direct flights only",
+                  "offset": 35
+                }
+              ],
+              "location": "MyStepdefs.iChooseTheAirports(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2174596324,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I specify the dates for departure and arrival of flight",
+            "match": {
+              "location": "MyStepdefs.iAddFlightDates()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 559273263,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I add nearby airports for both sides",
+            "match": {
+              "location": "MyStepdefs.iAddNearbyAirportsForBothSidess()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4215109024,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I search for flights",
+            "match": {
+              "location": "MyStepdefs.iSearchForFlights()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18240278366,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I should be on the Flights Results page for the trip from CHC to PAT with Return on direct flights only",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CHC to PAT with Return on direct flights only",
+                  "offset": 58
+                }
+              ],
+              "location": "MyStepdefs.iShouldBeOnResultsPage(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 163033913,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I should be displayed with appropriate error message",
+            "match": {
+              "location": "MyStepdefs.iShouldSeeAptErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search",
+    "description": "As a Product Owner\nI want to ensure that user is able to search direct return flights between two international cities",
+    "id": "search",
+    "keyword": "Feature",
+    "uri": "Search.feature"
+  }
+]

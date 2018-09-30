@@ -1,0 +1,6 @@
+{
+  "departureLocation":"CHC",
+  "returnLocation":"PAT",
+  "journeyType":true,
+  "toggleDirectFlights":true
+}
