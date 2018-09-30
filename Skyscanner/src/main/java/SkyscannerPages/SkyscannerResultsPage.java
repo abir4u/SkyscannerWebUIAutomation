@@ -81,10 +81,10 @@ public class SkyscannerResultsPage extends Skyscanner {
     public void validatePageURL(String fromLocation) {
         String url = driver.getCurrentUrl();
         if (fromLocation.equalsIgnoreCase("akl")) {
-            Assert.assertTrue(ErrorLogsFile.incorrectPageURL + ". Expected: " + ConstantsFile.resultsPageURLAKL2SIN + ", but Received: " + url, url.equalsIgnoreCase(ConstantsFile.resultsPageURLAKL2SIN));
+            Assert.assertTrue(ErrorLogsFile.incorrectPageURL + ". Expected: " + ConstantsFile.resultsPageURLAKL2SIN + ", but Received: " + url, url.contains(ConstantsFile.resultsPageURLAKL2SIN));
         }
         else {
-            Assert.assertTrue(ErrorLogsFile.incorrectPageURL + ". Expected: " + ConstantsFile.resultsPageURL4CHC2PAT + ", but Received: " + url, url.equalsIgnoreCase(ConstantsFile.resultsPageURL4CHC2PAT));
+            Assert.assertTrue(ErrorLogsFile.incorrectPageURL + ". Expected: " + ConstantsFile.resultsPageURL4CHC2PAT + ", but Received: " + url, url.contains(ConstantsFile.resultsPageURL4CHC2PAT));
         }
     }
 }
