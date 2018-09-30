@@ -28,10 +28,10 @@ The user is able to explore the direct flight options.
 
 #### Acceptance Criteria
 
-Only direct flights appear in the results
-If there are not direct flights then the user is presented with an appropriate error message
+- Only direct flights appear in the results
+- If there are not direct flights then the user is presented with an appropriate error message
 e.g. “Sorry, no direct results found – now showing results with stops.”
-This functionality works on at least 2 browsers (Chrome and Firefox )
+- This functionality works on at least 2 browsers (Chrome and Firefox )
 
 
 #### A Couple of Glitches in the Project:
