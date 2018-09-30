@@ -10,8 +10,8 @@ Website: https://www.skyscanner.co.nz/
 
 #### Project Prerequisites:
 Other than setting up the above mentioned language and tools on your machine, download the latest chrome driver and replace the existing path with the path of your installed chromedriver in the following document:
-File: /SkyscannerWebUIAutomation/Skyscanner/src/main/java/SkyscannerPages/Skyscanner.java
-Line #: 33
+- File: /SkyscannerWebUIAutomation/Skyscanner/src/main/java/SkyscannerPages/Skyscanner.java
+- Line #: 33
 
 
 #### User Story 
