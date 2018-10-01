@@ -74,7 +74,7 @@ public class SkyscannerResultsPage extends Skyscanner {
     }
 
     public void waitForPageToLoad() {
-        try { Thread.sleep(5000); } catch (InterruptedException e) {}
+        try { Thread.sleep(3000); } catch (InterruptedException e) {}
         wait.until(ExpectedConditions.visibilityOf(lastElementToBeLoaded));
     }
 
