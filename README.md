@@ -7,6 +7,7 @@ Website: https://www.skyscanner.co.nz/
 - Language Used: **Java**
 - Framework Used: **Selenium**
 - Build Management Tool: **Maven**
+- IDE: **IntelliJ IDEA** (optional)
 
 #### Project Prerequisites:
 Other than setting up the above mentioned language and tools on your machine, download the latest chrome driver and replace the existing path with the path of your installed chromedriver in the following document:
