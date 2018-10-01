@@ -35,7 +35,18 @@ e.g. “Sorry, no direct results found – now showing results with stops.”
 
 #### Running the Script:
 Feel free to use Maven lifecycle methods on Terminal to run this project.
-However, in case your IDE is not correctly set up for Maven builds, you can use the following command as well:
+
+However, in case your IDE is not correctly set up for Maven builds, you can use the following steps to run the test:
+
+- Launch IntelliJ IDEA
+- Open the pom.xml file within the project folder
+##### Method 1
+- Navigate to "View -> Tool Window -> Maven projects" to view the Maven projects window open as your right panel
+- Expand the project folder > "lifecycle" directory > Double Click "clean"
+
+##### Method 2
+- Navigate to Terminal
+- Type in the following:
 /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/bin/java "-Dmaven.multiModuleProjectDirectory=<**local path for repository**>/Skyscanner" "-Dmaven.home=/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3" "-Dclassworlds.conf=/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/bin/m2.conf" "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=58039:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar" org.codehaus.classworlds.Launcher -Didea.version=2017.1.3 install
 
 
