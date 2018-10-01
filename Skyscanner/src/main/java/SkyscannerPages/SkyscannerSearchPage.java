@@ -99,6 +99,7 @@ public class SkyscannerSearchPage extends Skyscanner {
 
     public void searchFlight(){
         searchFlight.click();
+        try {Thread.sleep(2000);} catch (InterruptedException e) {}
     }
 
     public void validatePageName() {
