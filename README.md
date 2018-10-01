@@ -38,6 +38,7 @@ Feel free to use Maven lifecycle methods on Terminal to run this project.
 
 However, in case your IDE is not correctly set up for Maven builds, you can use the following steps to run the test:
 
+##### Common Steps
 - Launch IntelliJ IDEA
 - Open the pom.xml file within the project folder
 ##### Method 1
