@@ -53,5 +53,5 @@ However, in case your IDE is not correctly set up for Maven builds, you can use 
 
 
 #### A Couple of Glitches in the Project:
-- While running the tests on Chrome browser, the Skyscanner website detects the automated actions on the page and prevents the scripts from accessing the Search Results page for the website.
-- A persistent problem in wait function forced me to use Thread.sleep() of 5 seconds at one instance across the project during navigation from Search page to the Search Results page.
+- While running the tests on Chrome browser, the Skyscanner website detects the automated actions on the page and prevents the scripts from accessing the Search Results page for the website. It takes you to the I'm Not a Robot page in Google Chrome. You should not have any such issue while running it on Firefox browser.
+- A persistent problem in wait function during navigation forced me to use Thread.sleep() of 5 seconds at one instance across the project. This is used during navigation from Search page to the Search Results page.
