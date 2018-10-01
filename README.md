@@ -44,7 +44,7 @@ However, in case your IDE is not correctly set up for Maven builds, you can use 
 - Open the pom.xml file within the project folder
 ##### Method 1
 - Navigate to "View -> Tool Window -> Maven projects" to view the Maven projects window open as your right panel
-- Expand the project folder > "lifecycle" directory > Double Click "clean"
+- Expand the project folder > "lifecycle" directory > Double Click "install"
 
 ##### Method 2
 - Navigate to Terminal
